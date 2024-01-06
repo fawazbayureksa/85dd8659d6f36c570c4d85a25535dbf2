@@ -1,0 +1,18 @@
+{
+    "name": "fawazbayureksa/85dd8659d6f36c570c4d85a25535dbf2",    
+    "type": "project",    
+    "description": "Send Email Using Rest Api",    
+    "keywords": [        
+        "PHP",        
+        "Email",    
+        "Api"    
+    ],    
+    "license": "MIT",    
+    "require": {        
+       "php": "^8.1", 
+       "phpmailer/phpmailer": "^6.9.1"        
+    },    
+    "require-dev": { },    
+    "config": {},    
+    "minimum-stability": "stable"
+}
