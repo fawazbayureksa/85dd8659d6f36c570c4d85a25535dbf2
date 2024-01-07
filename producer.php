@@ -15,7 +15,7 @@ function storeMessage($to, $subject, $message)
     $connection = new AMQPStreamConnection(getenv('MQ_HOST'), getenv('MQ_PORT'), getenv('MQ_USER'), getenv('MQ_PASS'), getenv('MQ_VHOST'));
     $channel = $connection->channel();
     // test,  queue name
-    $channel->queue_declare('test', false, true, false, false);
+    $channel->queue_declare(getenv('MQ_NAME'), false, true, false, false);
 
     $messageBody = [
         'to' => $to,
@@ -29,7 +29,7 @@ function storeMessage($to, $subject, $message)
     $message = new AMQPMessage(json_encode($messageBody));
 
     // Publish the message to queue
-    $channel->basic_publish($message, '', 'test'); // test,  queue name
+    $channel->basic_publish($message, '', getenv('MQ_NAME')); // test,  queue name
 
     $channel->close();
     $connection->close();

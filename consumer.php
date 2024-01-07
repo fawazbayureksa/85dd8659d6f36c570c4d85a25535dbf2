@@ -54,7 +54,7 @@ $callback = function (AMQPMessage $message) {
     }
 };
 
-$channel->basic_consume('test', '', false, true, false, false, $callback);
+$channel->basic_consume(getenv('MQ_NAME'), '', false, true, false, false, $callback);
 
 while ($channel->is_consuming()) {
     $channel->wait();
