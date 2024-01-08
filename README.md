@@ -37,7 +37,7 @@ composer install
  url : {localhost}api.php
 
 ### PUBLIC KEY
--value : e172dd95f4feb21412a692e73929961e
+- value : e172dd95f4feb21412a692e73929961e
 
 ### Request
 - Headers
