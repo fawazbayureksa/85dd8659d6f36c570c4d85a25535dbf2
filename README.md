@@ -5,6 +5,7 @@
 
 ### Prerequisites
 - PHP version 8.1 or higher
+- Web Server (Xampp)
 - Composer for managing dependencies
 - Mail SMTP Server (Already available)
 - RabbitMQ for message queue (Already available)
@@ -13,8 +14,19 @@
 ### Setup
 
 **Clone Repository**
+
+If using Xampp
+
+```
+cd C:\xampp\htdocs
+```
+then
 ```
 git clone https://github.com/fawazbayureksa/85dd8659d6f36c570c4d85a25535dbf2.git
+```
+then 
+```
+cd 85dd8659d6f36c570c4d85a25535dbf2
 ```
 ### Installation
 
